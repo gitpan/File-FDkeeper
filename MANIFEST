@@ -1,0 +1,12 @@
+Changes
+FDkeeper.pm
+FDkeeper/Client.pm
+FDkeeper/Server.pm
+Makefile.PL
+MANIFEST
+README
+t/01_init.t
+t/02_usage.t
+t/03_exceptions.t
+t/10bytes
+META.yml
