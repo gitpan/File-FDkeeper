@@ -24,7 +24,6 @@ if (! $pid){
 	) ;
 	close($starter) ;
 	$fdk->run($lifeline) ;
-	print STDERR "start\n" ;
 
 	exit() ;
 }
@@ -41,7 +40,7 @@ ok($fdk) ;
 
 my $buf = '' ;
 open(F,"<t/10bytes") or die("Can't open 't/10bytes' for reading: $!") ;
-read(F, $buf, 1) ;
+sysread(F, $buf, 1) ;
 ok($buf, "1") ;
 
 my $fhid = $fdk->put(\*F) ;
@@ -50,7 +49,7 @@ ok($fdk->cnt(), 1) ;
 
 foreach my $l (2 .. 9){
 	my $fh = $fdk->get($fhid) ;
-	read($fh, $buf, 1) ;
+	sysread($fh, $buf, 1) ;
 	ok($buf, $l) ;
 }
 
