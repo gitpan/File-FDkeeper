@@ -1,5 +1,6 @@
 Changes
 FDkeeper.pm
+FDkeeper.pod
 FDkeeper/Client.pm
 FDkeeper/Server.pm
 Makefile.PL

@@ -4,3 +4,7 @@ Revision history for Perl extension File::FDkeeper.
 	- original version; created by h2xs 1.22 with options
 		-AX File::FDkeeper
 
+0.04  Sat Jan 15 09:13:39 EST 2005
+    - Fixed some bugs
+    - Added forgotten docs!
+

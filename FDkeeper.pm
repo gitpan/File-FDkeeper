@@ -5,7 +5,7 @@ use IO::Handle ;
 use Carp ;
 
 
-$File::FDkeeper::VERSION = '0.03' ;
+$File::FDkeeper::VERSION = '0.04' ;
 
 
 sub new {
